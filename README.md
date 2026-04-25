@@ -7,7 +7,6 @@
 - 编程语言：Python 3.x
 - 深度学习框架：PyTorch / TorchVision
 - 数据集：CIFAR-10
-- 运行设备：CPU / GPU 均可
 
 ## 实验内容
 1. 详细介绍四种优化算法原理与数学公式；
@@ -23,18 +22,6 @@
 - Adam：结合动量与自适应学习率，收敛速度最快；
 - AdamW：解耦权重衰减，修正正则化缺陷，泛化性能更优。
 
-## 项目文件结构
-├── train.py       # 主训练脚本
-├── model.py       # 改造后 ResNet18 模型
-├── README.md      # 项目说明文档
-└── report.md      # 完整实验报告
-
-## 运行方式
-1. 安装依赖
-pip install torch torchvision
-
-2. 启动训练
-python train.py
 
 ## 实验结论
 1. 自适应类优化器（Adam、AdamW）收敛速度远快于传统 SGD 系列；
