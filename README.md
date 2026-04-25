@@ -1,5 +1,5 @@
 
-# ResNet18-Optimizers-Analysis
+# 不同优化算法对 ResNet18 在 CIFAR-10 数据集上训练效果的分析
 ## 项目简介
 本项目为深度学习课程实验作业，基于 PyTorch 框架，以 ResNet18 为基础网络，在 CIFAR-10 数据集上完成图像分类任务。控制统一训练参数，对比 SGD、SGD-Momentum、Adam、AdamW 四种主流优化算法的训练性能，从收敛速度、分类准确率、过拟合现象与泛化能力多维度展开分析。
 
