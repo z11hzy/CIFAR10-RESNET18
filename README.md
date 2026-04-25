@@ -25,3 +25,23 @@
 - AdamW：解耦权重衰减，泛化更好
 
 ## 文件结构
+├── train.py # 主训练脚本
+├── model.py # 改造后 ResNet18 模型
+├── README.md # 项目说明文档
+└── report.md # 完整实验报告
+
+## 运行方式
+1. 安装依赖
+```bash
+pip install torch torchvision
+2.启动训练
+python train.py
+实验结论
+
+自适应类优化器（Adam、AdamW）收敛速度远快于传统 SGD 系列；
+带动量的 SGD 训练更加平稳，后期准确率上限较高；
+AdamW 有效抑制过拟合，综合泛化能力最优；
+传统 SGD 对学习率设置高度敏感，调参成本更高。
+
+团队成员
+黄子懿、郭成、高子程
